@@ -17,6 +17,13 @@ class BubbleSortTest(unittest.TestCase):
 
     def test_bubble_sort_three_elements_case_2(self):
         self.assertEqual(bubble_sort([2, 3, 1]), [1, 2, 3])
+    
+    def test_four_elements_unordered(self):
+        self.assertEqual(bubble_sort([4, 2, 3, 1]), [1, 2, 3, 4])
+    
+    def test_ten_elements_unordered(self):
+        self.assertEqual(bubble_sort([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+
 
 
 
